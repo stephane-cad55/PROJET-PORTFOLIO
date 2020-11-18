@@ -1,0 +1,328 @@
+/* -reset -*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #330066;
+    --second-color: #e6ffcc;
+}
+
+/* - Général -------------------------------------------------------------------------------------*/
+
+body {
+    background-color: var(--main-color);
+    font-family: Comic Sans MS;
+}
+
+main {
+    padding-left: 250px;
+}
+
+section {
+    height: 100vh;
+}
+
+a, h1, h2 {
+    text-decoration: none;
+    text-align: center;
+}
+
+a:visited {
+    color: var(--second-color);
+}
+
+/* - Aside -------------------------------------------------------------------------------------*/
+
+aside {
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(29, 26, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    position: fixed;
+}
+
+#box-image {
+    height: 25vh;
+    padding: 45px;
+}
+
+.aside-img>img {
+    width: 150px;
+    height: 180px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    color: var(--second-color);
+    font-size: 30px;
+    height: 50vh;
+    list-style-type: none;
+    margin-right: 1px;
+}
+
+nav ul li {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li:hover {
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+.active {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    border-radius: 10px;
+}
+
+nav ul a:hover, nav ul a {
+    text-decoration: none;
+}
+
+nav a:visited, nav a {
+    color: var(--second-color);
+}
+
+/* - Accueil ---------------------------------------------------------------------------------------*/
+
+section#accueil {
+    color: var(--second-color);
+}
+
+#accueil .accueil-box {
+    min-height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: var(--second-color);
+}
+
+#accueil-image {
+    background-image: url("images/accueil\ fond_ecran.png");
+    height: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#accueil-image div {
+    background-color: rgba(169, 169, 169, 0.507);
+    box-shadow: 5px 5px rgb(67, 69, 83);
+    color: rgba(6, 24, 126, 0.87);
+    width: 50%;
+    padding: 25px;
+}
+
+.accueil-box p {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+/*- Compétences --------------------------------------------------------------------------------------*/
+
+#competences {
+    color: var(--second-color);
+    padding: 20px;
+}
+
+#logo-comp {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.comp-img {
+    width: 75px;
+    height: 75px;
+}
+
+.progress-container {
+    width: 70%;
+    height: 25px;
+    background-color: white;
+    margin: -100px 0 0 180px;
+    border-radius: 10px;
+}
+
+.progressbar-java {
+    height: 80%;
+    margin: 3px;
+    background-color: chocolate;
+    border-radius: 7px;
+    width: 50%;
+}
+
+.progressbar-html {
+    height: 80%;
+    margin: 3px;
+    background-color: chocolate;
+    border-radius: 7px;
+    width: 90%;
+}
+
+.progressbar-css {
+    height: 80%;
+    margin: 3px;
+    background-color: chocolate;
+    border-radius: 7px;
+    width: 90%;
+}
+
+.progressbar-php {
+    height: 80%;
+    margin: 3px;
+    background-color: chocolate;
+    border-radius: 7px;
+    width: 0%;
+}
+
+.progressbar-sql {
+    height: 80%;
+    margin: 3px;
+    background-color: chocolate;
+    border-radius: 7px;
+    width: 40%;
+}
+
+.text {
+    color: black;
+    text-align: center;
+}
+
+/*- Réalisations -------------------------------------------------------------------------------------*/
+
+#realisations {
+    color: var(--second-color);
+    padding: 20px;
+}
+
+.realisations div {
+    display: flex;
+}
+
+.reali-img {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.projet {
+    width: 100vh;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    margin: 100px;
+    text-align: justify;
+}
+
+.projetbis {
+    display: inline-block;
+    margin: -40px 50px 0 160px;
+    font-size: 20px;
+}
+
+.dossier {
+    width: 60px;
+    height: 60px;
+    margin: 40px 50px 0 55px;
+    box-shadow: 5px 5px rgba(46, 170, 154, 0.575);
+}
+
+/*- Contact -------------------------------------------------------------------------------------------*/
+
+#contact {
+    color: var(--second-color);
+    padding: 20px;
+    height: 100vh;
+}
+
+.contact-logo {
+    display: flex;
+    height: 60px;
+    border: 1px solid white;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 20px;
+}
+
+.logo-img {
+    background-color: var(--main-color);
+    height: 60px;
+    width: 80px;
+}
+
+img:hover+p {
+    display: block;
+    color: white;
+}
+
+.contact-logo p {
+    text-align: center;
+    display: none;
+}
+
+.info-p {
+    height: 20px;
+    width: 200px;
+    border: 1px solid white;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    padding: -10px;
+}
+
+form input {
+    height: 20px;
+    margin-left: 20px;
+    display: flex;
+    width: 200px;
+}
+
+form label {
+    margin-top: 30px;
+    display: flex;
+}
+
+.contact-img {
+    width: 650px;
+    height: 320px;
+    display: inline-block;
+    margin-top: -264px;
+}
+
+.message-p {
+    height: 150px;
+    width: 100%;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+.button {
+    width: 90px;
+    margin: 10px 0 0 600px;
+}
